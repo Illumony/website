@@ -1,0 +1,89 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- ##### Hero Area Start ##### -->
+<section class="hero-area">
+    <div class="hero-slides owl-carousel">
+        <!-- Single Hero Slide -->
+        <div class="single-hero-slide bg-img" style="background-image: url(../../img/bg-img/bg_7.jpg);">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <div class="hero-slides-content">
+                            <h4 data-animation="fadeInUp" data-delay="100ms" style="color: black;">Our Mission</h4>
+                            <h2 data-animation="fadeInUp" data-delay="1400ms" style="color: black; font-size: 36px">
+                                Foster the spirit of community service in the modern generation of students by organizing outreach events.
+                            </h2>
+                            @*<a href="#" class="btn academy-btn" data-animation="fadeInUp" data-delay="700ms">Read More</a>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Single Hero Slide -->
+        <div class="single-hero-slide bg-img" style="background-image: url(../../img/bg-img/bg_8.jpg);">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <div class="hero-slides-content">
+                            <h4 data-animation="fadeInUp" data-delay="100ms" style="color: White;">Our Services</h4>
+                            <h2 data-animation="fadeInUp" data-delay="1400ms" style="color: White; font-size:36px">
+                                Promote enthusiasm for STEM among underprivileged communities.
+                            </h2>
+                            <h2 data-animation="fadeInUp" data-delay="2000ms" style="color: White; font-size:36px">
+                                Direct fundraisers to raise money for charitable causes.
+                            </h2>
+                            @*<a href="#" class="btn academy-btn" data-animation="fadeInUp" data-delay="700ms">Read More</a>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Single Hero Slide -->
+        <div class="single-hero-slide bg-img" style="background-image: url(../../img/bg-img/bg-2.jpg);">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <div class="hero-slides-content" style="color: dimgrey;">
+                            <h4 data-animation="fadeInUp" data-delay="100ms" style="color: white;">Our Organization</h4>
+                            <h2 data-animation="fadeInUp" data-delay="1400ms" style="color: white; font-size:36px">
+                                A nonprofit organization dedicated to fostering the spirit of community
+                                service in the modern generation of students by organizing a wide
+                                variety of outreach events.
+                            </h2>
+                            @*<a href="#" class="btn academy-btn" data-animation="fadeInUp" data-delay="900ms">Read More</a>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Single Hero Slide -->
+        @*<div class="single-hero-slide bg-img" style="background-image: url(../../img/bg-img/bg_1.jpg);">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <div class="hero-slides-content">
+                                <h4 data-animation="fadeInUp" data-delay="100ms" style="color: white;">Illumony</h4>
+                                <h3 data-animation="fadeInUp" data-delay="400ms" style="color: white;">
+                                    These events include STEM programs to promote enthusiasm among underprivileged communities
+                                    as well as fundraisers to provide relief for relevant issues.
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>*@
+
+
+
+    </div>
+</section>
+<!-- ##### Hero Area End ##### -->
+
+@{
+    Html.RenderPartial("_courses");
+}

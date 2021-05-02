@@ -1,0 +1,85 @@
+﻿<section class="contact-area" style="padding-top:300px">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="contact-content">
+                    <div class="row">
+                        <!-- Contact Information -->
+                        <div class="col-12 col-lg-12">
+                            <div class="contact-information wow fadeInUp" data-wow-delay="400ms">
+                                <div class=" text-center">
+                                    @*<span>The Best</span>*@
+                                    @*<h3>Contact Us</h3>*@
+                                    <p class="">Every penny counts to advance our great cause. You can make a donation in one of the following two ways:</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="contact-icon mr-15">
+                                        <input type="text" id="temp" style="position:absolute;opacity:0;" value="contact.illumony@gmail.com">
+                                        <i class="icon-placeholder"></i> Use <a id="myLink" href="#" onclick="javascript:document.getElementById('donateForm').submit();">PayPal</a> to make an online donation to <strong id="imail">contact.illumony@gmail.com</strong> <i class="fa fa-copy" onclick="copy()" id="copyIcon"></i>
+                                        <br />
+                                        <span>Please make sure you spell our gmail correctly</span>
+                                    </div>
+                                    <p></p>
+                                </div>
+                                <br />
+                                <div class="text-center">
+                                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" id="donateForm">
+                                        <input type="hidden" name="cmd" value="_donations" />
+                                        <input type="hidden" name="business" value="contact.illumony@gmail.com" />
+                                        <input type="hidden" name="currency_code" value="USD" />
+                                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+
+
+                                        <!-- Contact Social Info -->
+                                        <input type="hidden" name="currency_code" value="USD" />
+                                        <p>
+                                            <img id="donateButton" alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                                        </p>
+                                    </form>
+                                </div>
+                                <!-- Single Contact Info -->
+                                <div class=" text-center">
+                                    <div class="contact-icon mr-15">
+                                        <i class="icon-placeholder"></i> Write a donation check to “Illumony” and mail it to the following address:
+                                    </div>
+                                    <p></p>
+                                    <br />
+
+                                    <p class="text-center"> Illumony <br /> P.O. Box 6558 <br> Falls Church, VA 22040-6558</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                @*</div>*@
+            </div>
+        </div>
+    </div>
+    <script>
+        function copy(e) {
+            var temp = document.getElementById("temp");
+
+            // is element selectable?
+            if (temp.select) {
+
+                // select text
+                temp.select();
+    
+                // Not all browsers implement execCommand and, if they don't,
+                // an error will be thrown.
+                try {
+                    // copy text
+                    document.execCommand('copy');
+
+                    $("#copyIcon").fadeOut(500).fadeIn(500);
+                } catch (err) {
+                    alert('please press Ctrl/Cmd+C to copy manually');   
+                }
+                
+            }
+
+        }
+    </script>
+</section>
